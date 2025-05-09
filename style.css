@@ -6,94 +6,111 @@
 
 body {
     font-family: 'Lexend', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-.logo img {
-    height: 20px;
-    width: 20px;
+#navbar {
+    background-color: #FFF3F1;
+    color: #49223A;
+    padding: 20px 30px;
 }
 
 .nav-items {
-    margin: 20px;
-    color: #FD4D54;
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav-items li {
-    display: inline;
+.logo-title {
+    display: flex;
     list-style-type: none;
+    gap: 10px;
 }
 
-.right-pane {
-    float: right;
-    padding: 12px;
+.logo-title img {
+    width: 30px;
 }
 
-#landing {
+.nav-right-items {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.landing {
     background: url(./images/background.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
     height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    color: #49223A;
+    padding: 30px 10px;
 }
 
 .landing-text {
-    width: 450px;
-    float: right;
-    margin: 150px 60px 20px;
+    width: 500px;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .landing-header {
-    font-size: 3em;
-}
-
-.landing-description {
-    margin: 20px 0;
-    font-size: 18px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .landing-button {
-    margin: 10px 0;
-    padding: 16px;
+    padding: 10px;
+    width: 180px;
     border-radius: 10px;
-    border: none;
-    background-color: #FD4D54;
-    color: white;
+    color: #49223A;
     font-weight: bold;
+    background-color: #F8B081;
+    border: 2px solid transparent;
 }
 
-#food-cards, h2 {
+#food-cards {
+    background-color: #FFF3F1;
+    color: #49223A;
     text-align: center;
+    padding: 50px;  
 }
 
-h2 {
-    margin-top: 25px;
-}
-
-.landing-card img {
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-    border: 2px solid black;
+.landing-food-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 .landing-card {
-    display: inline-block;
-    /* width: 200px; */
-    vertical-align: top;
-    margin: 30px;
+    flex: 1;
+    width: 400px;
+} 
+
+.landing-card img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    margin: 15px 0;
 }
 
 .landing-card-title {
-    padding: 10px 0 20px;
+    margin-bottom: 20px;
 }
 
 .landing-card a {
     text-decoration: none;
-    border: 2px solid white;
-    border-radius: 10px;;
     padding: 10px;
-    background-color: #FD4D54;
-    color: white;
-    font-size: 12px;
+    background-color: #F8B081;
+    color: #49223A;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
