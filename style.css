@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 body {
@@ -357,4 +358,136 @@ footer {
     align-items: center;
     gap: 10px;
     color: #FFF4EE;
+}
+
+
+/* RECIPES PAGE */
+
+.recipe-hero {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #FFF4EE;
+    color: #49223A;
+    padding-bottom: 40px;
+    /* flex-wrap: wrap; */
+}
+
+.recipe-hero-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.recipe-hero-text {
+    flex: 3;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+.recipe-hero-header {
+    padding-bottom: 20px;
+    font-family: 'Marck Script', 'Lexend', sans-serif;
+    font-size: 37px;
+}
+
+.recipe-hero-description {
+    width: 100%; 
+
+}
+
+.recipe-hero-rating {
+    flex: 1;
+    display: flex;  
+    justify-content: flex-end;
+    font-size: 30px;
+}
+
+.recipe-hero-img img {
+    border-radius: 25px;
+    max-width: 100%;
+    padding: 20px 40px;
+}
+
+.recipe-content {
+    background-color: #FFF4EE;
+    color: #49223A;
+    display: flex;
+    padding: 30px 40px;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.recipe-content-ingredients {
+    display: flex;
+    flex-direction: column;
+        width: 100%;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.recipe-content-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.recipe-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.recipe-icon img {
+    width: 30px;
+}
+
+.recipe-content-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.recipe-ingredients {
+    list-style-type: none;
+    text-align: center;
+}
+
+.recipe-content-directions {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recipe-questions {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEE9DF;
+    color: #531E44;
+    gap: 20px
+}
+
+.recipe-question-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.recipe-questions a {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F8B081;
+    border: transparent;
+    font-weight: bold;
+    color: #49223A;
+    text-decoration: none;
 }
