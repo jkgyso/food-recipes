@@ -9,12 +9,15 @@ body {
     font-family: 'Lexend', sans-serif;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden; /*prevents horizontal scrolling*/
 }
 
 #navbar {
     background-color: #FFF3F1;
     color: #49223A;
-    padding: 20px 30px;
+    padding: 10px 20px;
 }
 
 .nav-items {
@@ -52,7 +55,7 @@ body {
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
-    min-width: 100%;
+    max-width: 100%;
     height: 50vh;
     color: white;
     display: flex;
@@ -102,12 +105,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    max-width: 100%;
 }
 
 .landing-card {
-    flex: 1;
-    width: 400px;
+    flex: 1 1 400px;
+    max-width: 100%;
     margin-top: 20px;
 } 
 
@@ -116,6 +119,7 @@ body {
     height: 250px;
     border-radius: 10px;
     margin: 15px 0;
+    object-fit: cover;
 }
 
 .landing-card-title {
@@ -142,6 +146,7 @@ body {
     flex-wrap: wrap;
     color: #FFF4EE;
     background: #571C44;
+    max-width: 100%;
 }
 
 .landing-vision img {
@@ -157,7 +162,7 @@ body {
     gap: 30px;
     align-items: center;
     justify-content: center;
-    padding: 20px 30px;
+    padding: 10px 20px;
     min-width: 300px;
 }
 
@@ -278,7 +283,7 @@ body {
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
-    max-width: 100%
+    max-width: 100%;
 }
 
 .contact-form, .contact-info {
@@ -293,8 +298,10 @@ body {
 }
 
 form {
-    padding: 30px;
-    width: 400px;
+    flex: 1;
+    padding: 20px;
+    margin: 30px;
+    max-width: 400px;
     border: 4px solid #FAAF82;
     display: flex;
     flex-direction: column;
