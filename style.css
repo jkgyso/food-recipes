@@ -371,7 +371,6 @@ footer {
     background-color: #FFF4EE;
     color: #49223A;
     padding-bottom: 40px;
-    /* flex-wrap: wrap; */
 }
 
 .recipe-hero-top {
@@ -418,16 +417,18 @@ footer {
     display: flex;
     padding: 30px 40px;
     gap: 20px;
-    /* flex-wrap: wrap; */
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
-.recipe-content-ingredients {
+.recipe-content-ingredients, .recipe-content-directions {
     display: flex;
     flex-direction: column;
-        width: 100%;
     align-items: center;
     gap: 20px;
-    flex: 1;
+    flex: 1 1 400px;
+    padding: 20px;
+    max-width: 100;
 }
 
 .recipe-content-icons {
@@ -458,13 +459,6 @@ footer {
     text-align: center;
 }
 
-.recipe-content-directions {
-    padding: 0 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex-wrap: wrap;
-}
 
 .recipe-questions {
     display: flex;
@@ -474,7 +468,8 @@ footer {
     align-items: center;
     background-color: #FEE9DF;
     color: #531E44;
-    gap: 20px
+    gap: 30px;
+    max-width: 100%;
 }
 
 .recipe-question-header {
